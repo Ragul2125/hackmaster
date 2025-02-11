@@ -1,0 +1,99 @@
+.nav-pg{
+    /* background-color:#0b0b45; */
+    
+}
+.top-nav{
+    width: calc(100vw - 80px);
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    padding: 0em 1em;
+    justify-content: space-between;
+    float: right;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    .search{
+        background-color: #e5edf9;
+        display: flex;
+        width: 300px;
+        padding: 0.2em 0.4em;
+        border-radius: 10px;
+        margin-left: 3em;
+        img{
+            width: 20px;
+        }
+        input{
+            border: none;
+            outline: none;
+            width: 250px;
+            padding:0.5em;
+            background-color: transparent;
+            font-size: 1em;
+
+        }
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        font-size: 1.3em;
+        margin-right: 1em;
+    }
+}
+/*  */
+.side-navbar{
+    background-color: #0B0B45;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    .logo-sec{
+        img{
+            width: 50px;
+            height: 60px;
+        }
+    }
+
+    .nav-sec{
+        display: flex;
+        flex-direction: column;
+        gap: 27em;
+        ul{
+            list-style: none;
+            li{
+                margin-top: 20px;
+                font-size: xx-large;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #cfd8dc;
+                opacity: 90%;
+                padding-bottom: 0.5em;
+                p{
+                    font-size: small;
+                }
+            }
+            
+
+        }
+        .logout{
+            font-size: xx-large;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #cfd8dc;
+                opacity: 90%;
+                row-gap: 5px;
+                p{
+                    font-size: small;
+                }   
+        }
+
+    }
+    
+}

@@ -1,0 +1,253 @@
+.resume-pg {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 2em;
+  background-color: var(--white);
+  .resume-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1em;
+    .resume-card {
+      width: 300px;
+      height: 150px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      padding: 2em;
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      .content{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+    }
+  }
+  .container{
+    width: 100%;
+    height: 600px;
+    /* background-color: aqua; */
+    /* margin-top: 1em; */
+    padding: 1em;
+    /* General Table Styling */
+.table-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  .styled-table thead {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .styled-table th {
+    font-weight: 600;
+  }
+  
+  .styled-table tbody {
+    display: block;
+    max-height: 350px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .styled-table tbody tr {
+    transition: background-color 0.2s ease;
+  }
+  
+  .styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Optional: Row Styling for Better Spacing */
+  .styled-table tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  /* Last-row border removal */
+  .styled-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .styled-table td {
+    text-align: left;
+  }
+  
+  .table-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  }
+}
+
+
+
+
+.candidate-profile{
+    width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 2em;
+  background-color: var(--white);
+  .header{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2em 2em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    h2{
+        padding-bottom: 0.5em;
+    }
+  }
+  .candidate-container{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    .left{
+        width: 70%;
+        height: 600px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .resume{
+          width: 100px;
+          height: 30px;
+          background-color: #28a745;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+        ul{
+            margin-left: 2em;
+            li{
+                list-style: number;
+                padding-bottom: 0.5em;
+            }
+        }
+    }
+    .right{
+        width: 30%;
+        background-color: #fff;
+        height: 600px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        .score-card {
+            width: 100%;
+            /* background: white; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            border-radius: 10px;
+            padding: 3em;
+            text-align: center;
+            /* border: 1px solid #e0e0e0; */
+        }
+        
+        /* Score header */
+        .score-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .score-circle {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border: 4px solid #28a745;
+            color: #28a745;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .score-text {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .bold {
+            font-weight: bold;
+            color: black;
+        }
+        
+        .green-text {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        /* Score list */
+        .score-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        
+        .score-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        /* Check and Cross Icons */
+        .check {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .cross {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    }
+  }
+}

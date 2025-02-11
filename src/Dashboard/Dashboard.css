@@ -1,0 +1,189 @@
+.add{
+    display: flex;
+    justify-content: end;
+    padding: 1em;
+    .req,.add-jobs{
+        margin-right:1em ;
+        button{
+            padding: 0.75em 1em;
+            border-radius: 10px;
+            background-color: #2979d4;
+            color: white;
+            border: none;
+            outline: none;
+           cursor: pointer;
+        }
+    }
+}
+.dash {
+  width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 1em;
+  overflow-y: auto;
+  
+  /* background-color: #4b93e7; */
+  .cards-container{
+    width: 100%;
+    /* height: 450px; */
+    /* background-color: aqua; */
+    padding: 0em 4em;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+
+  }
+}
+
+
+.cards {
+    width: 290px;
+    height: 170px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: end;
+    padding: 2em;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.cards {
+    width: 290px;
+    height: 170px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: end;
+    padding: 2em;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease;
+    p{
+        opacity: 50%;
+    }
+}
+
+.cards:hover {
+    background-color: rgb(74, 147, 231,10%);
+    p{
+        color: black;
+        opacity: 100%;
+    } 
+}
+
+.counts {
+    width: 90px;
+    height: 90px;
+    background-color: #f3f8ff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -1em;
+    margin-left: -1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, width 0.2s, height 0.2s;
+}
+
+/* Hover effect on counts when hovered */
+.counts.hovered {
+    background-color: #4b93e7; /* Blue background */
+    color: white; /* White text for better contrast */
+    width: 120px;
+    height: 110px;
+}
+.table-container {
+    width: 97%;
+    max-height: 350px;
+    padding: 0em 4em;
+    margin-top: 2em;
+}
+
+/* Scrollable wrapper */
+.table-wrapper {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+/* Sticky table header */
+thead {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+thead th {
+    padding: 15px 16px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    
+}
+
+/* Row styling */
+tbody tr {
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #e2e8f0;
+}
+
+/* Table cell styling */
+tbody td {
+    padding: 12px 16px;
+    font-size: 0.9em;
+    vertical-align: middle;
+}
+
+/* Image styling */
+tbody td img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Job title styling */
+tbody td .job-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+tbody td h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    color: #1e293b;
+}
+
+tbody td:first-child {
+    display: flex;
+    align-items: center;
+}

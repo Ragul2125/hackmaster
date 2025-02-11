@@ -1,0 +1,133 @@
+.Jobs-pg{
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    background-color: var(--white);
+    /* .search{
+        width: 65%;
+        padding: 0.2em 0.4em;
+        border-radius: 10px;
+        background-color: #e5edf9;
+        
+        input{
+            width: 100%;
+            border: none;
+            outline: none;
+            width: 250px;
+            padding:0.5em;
+            background-color: transparent;
+            font-size: 1em;
+            background-color: #0b0b45;
+        }
+    } */
+    
+}
+/* --------------------------------------------------- */
+.card{
+    width: 90%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #F3F8FF; */
+    
+    .a{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        .card-1{
+            width: 250px;
+            height: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            justify-content: center;
+            border-radius: 15px;
+            gap: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            button{
+                width: 70px;
+                height: 30px;
+                background-color:rgb(11, 11, 69,85%);
+                
+                border-radius: 5px;
+                color: white;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/* -------------------------------------------------------- */
+/* General table styles */
+.table {
+    width: 100%;
+    overflow-x: auto; /* For horizontal scrolling if needed */
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle; /* Aligns the content vertically in the middle */
+  }
+  td:first-child{
+    padding:20px;
+  }
+  /* Header styling */
+  th {
+    background-color: var(--blue);
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Row hover effect */
+  tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 16px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: inline-block; /* Makes the button a block-level element inside its cell */
+    vertical-align: middle; /* Aligns the button properly inside the cell */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    th, td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  
+  

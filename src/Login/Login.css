@@ -1,0 +1,121 @@
+
+.full-pg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+    .login-card{
+        width:50%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #E6EEF8;
+        padding:4em;
+        /* gap: 10px; */
+        border-radius: 20px;
+        justify-content: center;
+        .name-sec{
+            display: flex;
+            align-items: center;
+        }
+        .both{
+            display: flex;
+            /* gap: 10px; */
+            align-items: center;
+            justify-content: center;
+            /* background-color: #4B93E7; */
+            padding: 2em;
+            .img{
+                width: 50%;
+                padding-right: 3em;
+                img{
+                    width: 350px;
+                    height: 300px;
+                }
+            }
+            .v{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 50%;
+                border-left: 1px solid black;
+                /* padding: 1em; */
+                padding-left:4em;
+                align-items: center;
+                .t{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .forgot{
+                    p{  padding: 5px;
+                        display: flex;
+                        justify-content: end;
+                        float: right;
+                    }
+                }
+                input{
+                    width: 300px;
+                    padding: 0.8em;
+                    border-radius: 5px;
+                    border: 1px solid #4B93E7;
+                    outline: none;
+                    background-color: #DDEAFB;
+                    
+                }
+                .btn{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5em;
+                }
+                .login-btn{
+                    margin-top: 1em;
+                    width: 300px;
+                    padding: 0.7em;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #F7AC25;
+                    color: white;
+                    cursor: pointer;
+                    button{
+                        outline: none;
+                        border: none;
+                    }
+                }
+                .or{
+                    padding: 0;
+                }
+                .login-google{
+                    width: 300px;
+                    padding: 0.7em;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color:#4B93E7;
+                    color: white;
+                    cursor: pointer;
+                }
+                .forgot{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    p{
+                        font-size: small;
+                        margin-left:3px;
+                    }
+                }
+
+            }
+        }
+    }
+    
+}
