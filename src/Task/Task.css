@@ -23,6 +23,20 @@
             padding: 1em;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             cursor: pointer;
+            display: flex;
+            /* flex-direction: column; */
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+            }
+            .right{
+                img{
+                    width: 160px;
+                }
+            }
+            gap: 1.5em;
+
         }
     }
 }

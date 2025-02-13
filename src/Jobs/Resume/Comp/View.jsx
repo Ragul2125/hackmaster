@@ -12,7 +12,7 @@ const CandidateProfile = () => {
         <div className="left">
           <h3>Candidate File</h3>
           <div className="resume">
-            <p>Resume</p>
+            <p><a href="https://drive.google.com/file/d/1qtKwvSa-s2z21fsD7YmVAgzKSHLWP1uX/view?usp=drive_link">Resume</a></p>
           </div>
           <h3>Last Experience</h3>
           <p>Senior Data Analyst</p>

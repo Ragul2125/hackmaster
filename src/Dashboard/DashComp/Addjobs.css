@@ -1,0 +1,77 @@
+/* Background for the registration page */
+.registration-container {
+    position: fixed;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    width: calc(100vw - 80px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);  */
+    background-color: #f9f9f9;
+    z-index: 1111; /* Make sure it's above other elements */
+ }
+  
+  /* Job registration card */
+  .registration-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  /* Title styling */
+  .title {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Form fields layout */
+  .form-group {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  /* Input field styling */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Textarea customization */
+  .textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  /* Submit button styling */
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color:#0b0b45;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

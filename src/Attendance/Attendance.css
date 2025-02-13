@@ -21,6 +21,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
             gap: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             h3{
@@ -41,8 +42,8 @@
                 color:#4B93E7 ;
             }
             .number-2{
-                background-color: #f1868d;
-                color:#E74B4E;
+                background-color: rgb(126, 187, 126);
+                color:white;
             }
             .number-3{
                 background-color:#dd9aef ;

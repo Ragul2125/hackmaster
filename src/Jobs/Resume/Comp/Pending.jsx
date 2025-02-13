@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Pending = () => {
+  const Navigate =useNavigate();
+  const handleview = ()=>{
+    Navigate("/hr/view")
+  }
   return (
     <div>
       <table>
@@ -11,11 +16,11 @@ const Pending = () => {
             <th>Email</th>
             <th>Experience</th>
             <th>About</th>
-            <th>Staus</th>
+            <th>More</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr onClick={handleview}>
             <td>John Doe</td>
             <td>+1234567890</td>
             <td>johndoe@example.com</td>
@@ -24,7 +29,9 @@ const Pending = () => {
               A passionate developer with expertise in front-end and back-end
               technologies.
             </td>
-            <td>Pending</td>
+            <td>
+              <button>view</button>
+            </td>
           </tr>
           <tr>
             <td>Jane Smith</td>
@@ -34,7 +41,9 @@ const Pending = () => {
             <td>
               Specializes in UI/UX design and creating user-friendly interfaces.
             </td>
-            <td>Pending</td>
+            <td>
+              <button>view</button>
+            </td>
           </tr>
           <tr>
             <td>Michael Johnson</td>
@@ -45,7 +54,9 @@ const Pending = () => {
               Experienced full-stack developer with a focus on scalable web
               applications.
             </td>
-            <td>Pending</td>
+            <td>
+              <button>view</button>
+            </td>
           </tr>
           <tr>
             <td>Emily Davis</td>
@@ -55,7 +66,9 @@ const Pending = () => {
             <td>
               Passionate about data analytics and machine learning projects.
             </td>
-            <td>Pending</td>
+            <td>
+              <button>view</button>
+            </td>
           </tr>
         </tbody>
       </table>

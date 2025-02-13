@@ -1,75 +1,91 @@
 import React from 'react'
-
-const Selectec = () => {
+import dp from '../../../assets/profileImg.svg'
+import { FaLinkedinIn } from "react-icons/fa";
+import '../Resume.css'
+const Appointed = () => {
   return (
-    <div>
-      <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Phone No</th>
-              <th>Email</th>
-              <th>Experience</th>
-              <th>About</th>
-              <th>Staus</th>
-              <th>Reason</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John Doe</td>
-              <td>+1234567890</td>
-              <td>johndoe@example.com</td>
-              <td>5 years</td>
-              <td>
-                A passionate developer with expertise in front-end and back-end
-                technologies.
-              </td>
-              <td>Selected</td>
-              <td>Resume is Good</td>
-            </tr>
-            <tr>
-              <td>Jane Smith</td>
-              <td>+0987654321</td>
-              <td>janesmith@example.com</td>
-              <td>3 years</td>
-              <td>
-                Specializes in UI/UX design and creating user-friendly
-                interfaces.
-              </td>
-              <td>Selected</td>
-              <td>Resume is Good</td>
-
-            </tr>
-            <tr>
-              <td>Michael Johnson</td>
-              <td>+1122334455</td>
-              <td>michael.johnson@example.com</td>
-              <td>7 years</td>
-              <td>
-                Experienced full-stack developer with a focus on scalable web
-                applications.
-              </td>
-              <td>Selected</td>
-              <td>Resume is Good</td>
-
-            </tr>
-            <tr>
-              <td>Emily Davis</td>
-              <td>+2233445566</td>
-              <td>emilydavis@example.com</td>
-              <td>4 years</td>
-              <td>
-                Passionate about data analytics and machine learning projects.
-              </td>
-              <td>Selected</td>
-              <td>Resume is Good</td>
-              
-            </tr>
-          </tbody>
-        </table>
+    <div className='appointed-pg'>
+        <div className='appointed-card'>
+            <div className='left-side'>
+                <img src={dp}/>
+                <div className='aa'>
+                    <h3>Vidhesh</h3>
+                    <div>
+                        <p>vidhesh@gmail.com</p>
+                        <p>|</p>
+                        <p>+91 9360534654</p>
+                    </div>
+                    <p><FaLinkedinIn/></p>
+                </div>
+            </div>
+            <div className='right-side'>
+                <div className='bb'>
+                    <p>Round</p>
+                    <p>Assigned To</p>
+                    <p>Interview Date</p>
+                </div>
+                <div className='cc'>
+                    <input type='text' placeholder='eg:technical'/>
+                    <input type='text' placeholder='eg:ragul'/>
+                    <input type='date'/>
+                </div>
+            </div>
+        </div>
+        <div className='appointed-card'>
+            <div className='left-side'>
+                <img src={dp}/>
+                <div className='aa'>
+                    <h3>Vidhesh</h3>
+                    <div>
+                        <p>vidhesh@gmail.com</p>
+                        <p>|</p>
+                        <p>+91 9360534654</p>
+                    </div>
+                    <p><FaLinkedinIn/></p>
+                </div>
+            </div>
+            <div className='right-side'>
+                <div className='bb'>
+                    <p>Round</p>
+                    <p>Assigned To</p>
+                    <p>Interview Date</p>
+                </div>
+                <div className='cc'>
+                    <input type='text' placeholder='eg:technical'/>
+                    <input type='text' placeholder='eg:ragul'/>
+                    <input type='date'/>
+                </div>
+            </div>
+        </div>
+        <div className='appointed-card'>
+            <div className='left-side'>
+                <img src={dp}/>
+                <div className='aa'>
+                    <h3>Vidhesh</h3>
+                    <div>
+                        <p>vidhesh@gmail.com</p>
+                        <p>|</p>
+                        <p>+91 9360534654</p>
+                    </div>
+                    <p><FaLinkedinIn/></p>
+                </div>
+            </div>
+            <div className='right-side'>
+                <div className='bb'>
+                    <p>Round</p>
+                    <p>Assigned To</p>
+                    <p>Interview Date</p>
+                </div>
+                <div className='cc'>
+                    <input type='text' placeholder='eg:technical'/>
+                    <input type='text' placeholder='eg:ragul'/>
+                    <input type='date'/>
+                </div>
+            </div>
+        </div>
+        
     </div>
   )
 }
 
-export default Selectec
+export default Appointed

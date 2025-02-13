@@ -1,5 +1,6 @@
 import React from 'react'
 import './Task.css'
+import Image from'../assets/task.svg'
 const Task = () => {
   return (
     <div className='task-pg'>
@@ -8,6 +9,7 @@ const Task = () => {
       </header>
       <div className="task-container">
         <div className="task-cards">
+            <div className="left">
             <div className="task-cards-header">
                 <h2>Project Name</h2>
 
@@ -17,9 +19,14 @@ const Task = () => {
             </div>
             <div className="dead-line">
                 <p>12/01/2006</p>
+            </div>
+            </div>
+            <div className="right">
+                <img src={Image} alt="" />
             </div>
         </div>
         <div className="task-cards">
+        <div className="left">
             <div className="task-cards-header">
                 <h2>Project Name</h2>
 
@@ -29,8 +36,13 @@ const Task = () => {
             </div>
             <div className="dead-line">
                 <p>12/01/2006</p>
+            </div>
+            </div>
+            <div className="right">
+                <img src={Image} alt="" />
             </div>
         </div><div className="task-cards">
+        <div className="left">
             <div className="task-cards-header">
                 <h2>Project Name</h2>
 
@@ -40,8 +52,13 @@ const Task = () => {
             </div>
             <div className="dead-line">
                 <p>12/01/2006</p>
+            </div>
+            </div>
+            <div className="right">
+                <img src={Image} alt="" />
             </div>
         </div><div className="task-cards">
+        <div className="left">
             <div className="task-cards-header">
                 <h2>Project Name</h2>
 
@@ -52,42 +69,14 @@ const Task = () => {
             <div className="dead-line">
                 <p>12/01/2006</p>
             </div>
-        </div><div className="task-cards">
-            <div className="task-cards-header">
-                <h2>Project Name</h2>
-
             </div>
-            <div className="team">
-                <h3>Team Name</h3>
+            <div className="right">
+                <img src={Image} alt="" />
             </div>
-            <div className="dead-line">
-                <p>12/01/2006</p>
-            </div>
-        </div><div className="task-cards">
-            <div className="task-cards-header">
-                <h2>Project Name</h2>
-
-            </div>
-            <div className="team">
-                <h3>Team Name</h3>
-            </div>
-            <div className="dead-line">
-                <p>12/01/2006</p>
-            </div>
-        </div><div className="task-cards">
-            <div className="task-cards-header">
-                <h2>Project Name</h2>
-
-            </div>
-            <div className="team">
-                <h3>Team Name</h3>
-            </div>
-            <div className="dead-line">
-                <p>12/01/2006</p>
-            </div>
-        </div>
+        
       </div>
-    </div>
+      </div>
+</div>
   )
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../Dashboard.css";
-
+import Cardimg from '../../assets/inter.svg'
 const Cards = () => {
   // Function to handle hover events
   const [hoverIndex, setHoverIndex] = useState(-1);
@@ -19,6 +19,9 @@ const Cards = () => {
           </div>
           <div className="cards">
             <p>Interview Scheduled</p>
+           <div className="image">
+           <img src={Cardimg} alt="" />
+           </div>
           </div>
         </div>
       ))}
